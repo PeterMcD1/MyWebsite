@@ -1,0 +1,295 @@
+/*
+Colors Used:
+ - body --------------> #FFFFFF
+ - navbar ------------> #94B0FA
+ - navbar-brand ------> #FFFFFF
+ - picture_column ----> #FC9C5F
+ - profile_picture ---> #FFFFFF
+ - bio_box -----------> #FFFFFF
+ - detail_box --------> #D6C8C8
+ - about_box ---------> #FFFFFF
+ - footer_style ------> #94B0FA
+ */
+
+
+
+
+html, body
+{
+    height: 100%;
+}
+
+#wrap
+{
+    min-height: 100%;
+}
+
+#main
+{
+    overflow:auto;
+    padding-bottom: 0;
+}  /* must be same height as the footer */
+
+#footer
+{
+    position: relative;
+    margin-top: -42px; /* negative value of footer height */
+    height: 0;
+    clear:both;}
+/*Opera Fix*/
+
+body:before
+{
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/
+}
+
+body
+{
+    background-color: #FFFFFF;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#wrap
+{
+    display:table;
+    height:100%
+}
+
+.navbar
+{
+    background-color: #94B0FA;
+    /*border-bottom: white thick solid*/
+}
+
+.navbar-brand
+{
+    border-radius: 5px;
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    margin-left: 10px
+}
+
+#nav_link_current
+{
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+#top_nav_link
+{
+    text-align: right;
+    border-top: thin solid;
+
+}
+
+.nav-link
+{
+    text-align: right;
+
+}
+
+#main_container
+{
+    margin: 10px;
+    margin-top: 30px;
+    height: auto;
+}
+
+#picture_column
+{
+    background-color: #FC9C5F;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#profile_picture
+{
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+
+#exterior_p_column
+{
+    padding-bottom: 15px;
+}
+
+#interior_p_column
+{
+    padding-bottom: 3px;
+    padding-top: 15px;
+}
+
+#bio_box
+{
+    text-align: left;
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+#detail_box
+{
+    background-color: #D6C8C8;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#about_box
+{
+    border: thin solid black;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    background-color: #FFFFFF;
+}
+
+#footer_style
+{
+    background-color: #94B0FA;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.row.content {height: 450px}
+
+.sidenav {
+    padding-top: 20px;
+    /*background-color: #f1f1f1;*/
+    height: 100%;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+
+#firstA {
+    width: 31rem;
+    height: 40rem;
+    background: lightgrey;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#firstA #secondA{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 15%;
+}
+#firstA #thirdA{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#firstA #forthA{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#firstA #fifthA{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+
+#first {
+    width: 31rem;
+    height: 31rem;
+    background: lightgrey;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#first #second{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 15%;
+}
+#first #third{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#first #forth{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#first #fifth{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 10%;
+}

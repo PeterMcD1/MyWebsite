@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title><% title %></title>
+
+	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<% if(typeof local_css == 'string' && local_css){ %>
+	 <link href="../resources/css/<%=local_css%>" rel="stylesheet">
+	<% } %>
+    <!-- Custom styles for this template -->
+	<link href="../resources/css/my_style.css" rel="stylesheet">
+
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/home">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+    <a class="nav-link" href="/main">Main</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/searches">Search History</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/website">This Website</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/chess">Chess</a>
+    </li>
+  </ul>
+  <div class="form-inline my-2 my-lg-0">
+    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+  </div>
+  </div>
+</nav>

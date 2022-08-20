@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+<br><br>
+    <div class="container" style="background-color: #FC9C5F;">
+        <br>
+
+      <div class="col-4" >
+        <div class="row justify-content-center">
+          <%
+          var display = '';
+          if(drinkName) {
+             drinkName.forEach(function(item){
+               display += '' +
+                              '<div class="card-header" style="width: 100rem;"></div>'+
+                                  '<div class="card" style="width: 100rem;">'+
+                                    '<h5 class="card-title">' + item.drinkname + '</h5>' +
+                                      item.drinking1+ ', ' + item.drinking2 + ', '+ item.drinking3 +'<p class="card-text">'+ item.drinkinstruct + '</p></div>';
+             }); %>
+             <%- display %>
+             <%}%>
+             </div>
+             </div>
+        <div class="col-4"></div>
+        <br><br>
+    </div>
+<br>
+<br>
