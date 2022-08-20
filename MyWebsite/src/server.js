@@ -137,6 +137,13 @@ app.get('/chess',function(req,res){
   });
 })
 
+app.get('/api',function(req,res){
+  res.render('pages/api', {
+    title:'API Website',
+    address: '/api'
+  });
+})
+
 
 
 const server = app.listen(process.env.PORT || 3000, () => {
